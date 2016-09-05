@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.quad.booking.tablebooking"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        instrumentTest.setRoot('src/androidTest')
+       androidTest.setRoot('src/test')
+    }
+
+ /*   sourceSets {
+        androidTest.setRoot('src/test')
+        androidTest {
+            java.srcDirs = ['src/test']
+        }
+    }*/
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    compile 'com.android.support:cardview-v7:23.1.0'
+    compile group: 'com.google.code.gson', name: 'gson', version: '1.7.2'
+
+    compile 'com.android.volley:volley:1.0.0'
+
+    testCompile 'junit:junit:4.10'
+    testCompile "org.assertj:assertj-core:1.7.0"
+    testCompile "org.robolectric:robolectric:3.0"
+    testCompile 'org.mockito:mockito-all:1.8.4'
+    testCompile "org.robolectric:shadows-support-v4:3.0"
+}

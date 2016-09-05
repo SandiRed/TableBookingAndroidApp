@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/eco_black"
+            android:textSize="@dimen/customer_desc_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/customer_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/description_layout_margin_top"
+            android:layout_marginRight="@dimen/description_layout_margin_left"
+            android:layout_marginStart="@dimen/description_layout_margin_left"
+            android:layout_marginTop="@dimen/device_unlock_margin_top"
+            android:gravity="center"
+            android:textColor="@color/eco_black"
+            android:textSize="@dimen/device_unlock_text_size"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/table_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/eco_black"
+            android:textSize="@dimen/customer_desc_text_size" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

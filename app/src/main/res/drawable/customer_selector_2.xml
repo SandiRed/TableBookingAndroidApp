@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!-- solid background -->
+            <solid android:color="@color/btn_when_not_selected" />
+            <!-- border-->
+            <stroke android:width="2dp" android:color="@color/card_white" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <!-- solid background -->
+            <solid android:color="@color/btn_when_not_selected" />
+            <!-- border-->
+            <stroke android:width="2dp" android:color="@color/access_denied" />
+        </shape>
+    </item>
+</selector>

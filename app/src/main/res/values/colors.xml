@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="btn_when_not_selected">#8bc9f2</color>
+    <color name="access_denied">#50e62900</color>
+
+    <color name="card_white">#f7f7f7</color>
+    <color name="badge_black">#303030</color>
+    <color name="eco_black">#404040</color>
+
+</resources>

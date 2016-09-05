@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="customer_desc_text_size">16sp</dimen>
+    <dimen name="description_layout_margin_top">11dp</dimen>
+    <dimen name="description_layout_margin_left">14dp</dimen>
+    <dimen name="device_unlock_margin_top">13dp</dimen>
+    <dimen name="device_unlock_text_size">18sp</dimen>
+
+    <dimen name="header_text_size">11sp</dimen>
+    <dimen name="recycler_view_margin">12dp</dimen>
+    <dimen name="divider_height">5dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+</resources>
